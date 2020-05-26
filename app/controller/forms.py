@@ -8,10 +8,10 @@ class RegistrationForm(FlaskForm):
     firstname = StringField('First Name', validators=[DataRequired()])
     lastname = StringField('Last Name', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired()])
-    street = StringField('Email', validators=[DataRequired()])
-    city = StringField('Email', validators=[DataRequired()])
-    state = StringField('Email', validators=[DataRequired()])     
-    zipcode = StringField('Email', validators=[DataRequired()])     
+    street = StringField('Street', validators=[DataRequired()])
+    city = StringField('City', validators=[DataRequired()])
+    state = StringField('State', validators=[DataRequired()])     
+    zipcode = StringField('Zipcode', validators=[DataRequired()])     
     
     submit = SubmitField('Register')
 
